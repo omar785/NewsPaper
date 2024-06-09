@@ -1,0 +1,233 @@
+     /* new */
+           .modal-content {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background: transparent;
+               border: none;
+               position: relative;
+           }
+    
+           .modal-image {
+               max-height: 80vh;
+               max-width: 80vw;
+               width: auto;
+               height: auto;
+           }
+    
+           .nav-button {
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               background: rgba(0, 0, 0, 0.5);
+               color: white;
+               border: none;
+               font-size: 24px;
+               cursor: pointer;
+               z-index: 2;
+           }
+    
+           #prevButton {
+               left: 10px;
+           }
+    
+           #nextButton {
+               right: 10px;
+           }
+    
+           .close {
+               position: absolute;
+               top: 10px;
+               right: 10px;
+               color: white;
+               font-size: 30px;
+               font-weight: bold;
+               cursor: pointer;
+           }
+    
+           #contactButton {
+               position: absolute;
+               bottom: 10px;
+               left: 50%;
+               transform: translateX(-50%);
+               background: rgba(0, 0, 0, 0.5);
+               color: white;
+               border: none;
+               padding: 10px 20px;
+               cursor: pointer;
+               z-index: 2;
+           }
+       /* new */
+
+       
+
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    position: relative;
+    height: 100%;
+}
+
+
+
+                .modal-dialog {
+                    max-width: 80%;
+                }
+        
+                .modal-image {
+                    max-height: 80vh;
+                    width: auto;
+                    margin: 0 auto;
+                    display: block;
+                }
+
+.modal-image {
+    max-height: 80vh;
+    max-width: 80vw;
+    width: auto;
+    height: auto;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contactButton {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+
+       
+       
+       
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid {
+            margin: -5px;
+        }
+
+        .grid-item {
+            padding: 5px;
+        }
+
+        .modal-content {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .close,
+        .nav-button,
+        #contactButton {
+            color: white;
+            background: none;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            transition: color 0.3s;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .close {
+            font-size: 2.5em;
+            top: 20px;
+            right: 20px;
+            transform: none;
+        }
+
+        .nav-button {
+            top: 50%;
+        }
+
+        #prevButton {
+            left: 20px;
+        }
+
+        #nextButton {
+            right: 20px;
+        }
+
+        .close:hover,
+        .nav-button:hover,
+        #contactButton:hover {
+            color: #ddd;
+        }
+
+        #contactButton {
+            font-size: 1.2em;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        #contactButton:hover {
+            background-color: #0056b3;
+        }
